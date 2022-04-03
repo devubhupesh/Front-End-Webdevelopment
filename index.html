@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Simple lightbox CSS -->
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!-- Favicons 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    /> -->
+
+    <title>DSLR Landing Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <a href ="#" class ="logo">
+            <h1>
+                <span class = "canon">Canon</span> <span class="dslr">DSLR</span>
+                <span class ="camera"> &#128248; </span>
+            </h1>
+        </a>
+        <ul>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" id="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#dslr" class="nav-link" id="nav-link">DSLR Body</a>
+            </li>
+            <li class="nav-item">
+                <a href="#lens" class="nav-link" id="nav-link">Lens</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link" id="nav-link">Contact Us</a>
+            </li>
+
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Dark/light theme switcher -->
+    <div class="theme-switch">
+        
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+           <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+           <ion-icon name="moon-outline" class="moon"></ion-icon>
+           <div class="switcher"></div>
+        </label>
+        <script>const checkbox = document.querySelector("#checkbox");
+
+            checkbox.addEventListener("change", () => {
+              // Toggle website theme
+              document.body.classList.toggle("dark");
+            });</script>
+    </div>
+
+    <!-- Bars -->
+
+    <!-- Hero section -->
+    <section class ="hero">
+        <div class = "intro-text">
+            <h1>
+                <span class ="intro"> Delighting You Always <br /> </span>
+                <span class ="subintro"> New EOS R5 C</span>
+            </h1>
+            <p>Explore the best of both in video production and still photography with the new EOS R5 C,<br />
+                 A mirroless camera with the capablities of CINEMATIC visuals.</p>
+            <a class ="btn red" href="#">Buy Now<br /> </a>
+        </div>
+        <video width="540px" height="400px" controls autoplay muted>
+            <source src="C:\Users\user\Desktop\DSLR-WEBPAGE\assets\video\Introducing the Canon EOS R5 C Digital Camera.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <script>
+            document.getElementById('vid').play();
+        </script>
+        </div>
+
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h3>Latest from Canon</h3>
+        <h4>Inspiring a World of Change</h4>
+        <p>From farmers’ fields to city streets, oceans to microsatellites no matter where tomorrow takes us, we’ll be ready.</p>
+        <h3>Canon EOS R3</h3>
+        <p>Outpace. Outperform. Meet the mirrorless EOS that will transform the way you photograph movement.<br />
+            Capture the most fleeting of moments at 30fps.</p>
+
+    </section>
+
+    <!-- Lightbox image gallery -->
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img"><img src="assets/images/5DmIV.jpeg" alt=""></div>
+            <div class ="content">
+            <div class="title">5D Mark IV</div>
+            <div class="sub-title">Price: 2 lakh</div>
+            <p>Versatile in virtually all kinds of light and any shooting situation from print and wedding to full-bleed magazine spreads and other commercial or fine art use, the EOS 5D Mark IV consistently produces high-resolution 4K video and image files that are easily compatible with any number of diverse workflows.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="assets/images/7d.jpeg" alt=""></div>
+            <div class ="content">
+            <div class="title">EOS 7D</div>
+            <div class="sub-title">Price: 3 lakh</div>
+            <p>Designed for pros and semi-pros alike, the Canon EOS 7D DSLR Camera with 18-135mm Lens is a high-performance camera that features the resolving power of an 18-megapixel APS-C format CMOS sensor and dual DIGIC 4 image processors that enable 8 frames-per-second capture of high-definition, low-noise imaging at sensitivity</p>
+            <div class="btn">
+                <button>Buy Now</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="assets/images/g7x.jpeg" alt=""></div>
+            <div class ="content">
+            <div class="title">Canon G7X </div>
+            <div class="sub-title">Price: 78,000</div>
+            <p>High-resolution 4K recording is now possible in the PowerShot G7 series, and it's from the full width of the image sensor (no “cropping”). This is 4x the pixel resolution of 1080p “Full HD” video, and offers great quality potential to vloggers and other video users.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img"><img src="assets/images/50mm lens.jpeg" alt=""></div>
+        
+            <div class ="content">
+            <div class="title">50 mm Lens</div>
+            <div class="sub-title">Price: 10,000</div>
+            <p>Canon 50mm Prime Lens with aperture f1.4.It's one of the most popular lenses on the market, and it can be used for anything from portraits and car photography to landscapes and nighttime shots. The only time you can't use a 50mm lens is when you're so far away from your subject that capturing it requires a telephoto lens.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img"><img src="assets/images/g9x.jpeg" alt=""></div>
+            <div class ="content">
+            <div class="title">Canon G9x</div>
+            <div class="sub-title">Price: 1.8 lakh</div>
+            <p>The G9 X replaced the older Canon PowerShot S120 compact camera. The 1/1.7" inch sensor was replaced with a one-inch one. The zoom range was reduced from 5x to 3x to keep the camera small enough with the larger sensor.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img"><img src="assets/images/RF telephotolens.jpeg" alt=""></div>
+            <div class ="content">
+            <div class="title">Tele photo Lens</div>
+            <div class="sub-title">Price: 24 lakh</div>
+            <p>Canon Telephoto zoom Lens.70–200mm lenses are able to zoom to any focal length within the stated range. These are great for portrait photography, with a sharp subject and a pleasing bokeh blur effect in the background.</p>
+            <div class="btn">
+                <button>Buy Now</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        $(".slider").owlCarousel({
+            loop : true,
+            autoplay: true,
+            autoplayTimeout: 2000, 
+            autoplayHoverPause: true,
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Canon</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 Somewhere In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Automation</a>
+              </li>
+              
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2021 Canon USA. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Scroll to top button -->
+    <i class="scroll-up" id="scroll-up"
+     ><img
+       src="C:\Users\user\Desktop\DSLR-WEBPAGE\assets\icons\icons8-send-letter-50.png"
+       class="socicon up-arrow"
+       alt="up-arrow"/>
+       <script> const scrollUp = document.querySelector("#scroll-up");
+
+        scrollUp.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+        });</script> 
+    </i>
+
+    <!-- Web page script -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Simple lightbox -->
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      // Simple lightbox initializer
+    </script>
+  </body>
+</html>
